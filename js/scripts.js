@@ -10,6 +10,11 @@ let pokemonList = [
         type: ['Fire']
     },
     {
+        name: 'Charzard',
+        height: 1.7,
+        type: ['fire','Flying']
+    },
+    {
         name: 'Squirtle',
         height: 0.5,
         type: ['Water']
@@ -20,3 +25,13 @@ let pokemonList = [
         type: ['electric']
     }
 ]
+
+for (let i = 0; i <pokemonList.length; i++){
+    if (pokemonList[i].height >=1){
+        document.write(pokemonList[i].name + ' ' + '(Height:' + pokemonList[i].height + ')' + ' - Wow, that\'s big!' + '<br/>');
+    }else if (pokemonList[i].height <1 && pokemonList[i].height >=.5){
+        document.write(pokemonList[i].name + ' '  + '(Height:' + pokemonList[i].height + ')' +  ' - This is an average size.' + '<br/>');
+    }else {
+        document.write(pokemonList[i].name + ' ' + '(Height:' + pokemonList[i].height + ')' + ' - This is very small!' + '<br/>');
+    }
+}
